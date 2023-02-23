@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'core/constanse.dart';
-import 'features/splash_screen/views/splash_view.dart';
-
+import 'features/splash_screen/presentation/views/splash_view.dart';
 void main() {
   runApp(const MovieApp());
 }
