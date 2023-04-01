@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:mvvm_app/core/utils/assets.dart';
 import 'package:mvvm_app/features/home/presentation/views/home.dart';
 import '../../../../../core/constanse.dart';
@@ -44,11 +43,11 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigationDelayed() {
      Future.delayed(const Duration(seconds: 2), () {
-      Get.to(
-        () => const HomeScreen(),
-        transition: Transition.rightToLeft,
-        duration: kTransactionDuration,
-      );
+      // Get.to(
+      //   () => const HomeScreen(),
+      //   transition: Transition.rightToLeft,
+      //   duration: kTransactionDuration,
+      // );
     });
   }
 

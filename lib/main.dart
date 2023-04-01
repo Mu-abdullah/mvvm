@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
 import 'core/constanse.dart';
+import 'features/home/presentation/views/home.dart';
 import 'features/splash_screen/presentation/views/splash_view.dart';
+
 void main() {
   runApp(const MovieApp());
 }
@@ -12,10 +12,10 @@ class MovieApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPrimaryColor),
-      home:const SplashView(),
+      home:const HomeScreen(),
     );
   }
 }

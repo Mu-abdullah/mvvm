@@ -6,7 +6,7 @@ class CustomSize {
     return MediaQuery.of(context).size.height * size;
   }
 
-  double widthtSize(BuildContext context, double size) {
+  double widthSize(BuildContext context, double size) {
     return MediaQuery.of(context).size.width * size;
   }
   
