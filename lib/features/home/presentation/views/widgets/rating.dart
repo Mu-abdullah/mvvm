@@ -21,11 +21,16 @@ class Rating extends StatelessWidget {
         SizedBox(
           width: CustomSize().widthSize(context, .01),
         ),
-        TextStyles().subText(text: "4.8"),
+        TextStyles().subText(
+          text: "4.8",
+        ),
         SizedBox(
           width: CustomSize().widthSize(context, .01),
         ),
-        TextStyles().subText(text: "(2584)"),
+        TextStyles().subText(
+          text: "(2584)",
+          subTitleColor: Colors.grey,
+        ),
       ],
     );
   }

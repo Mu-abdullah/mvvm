@@ -15,13 +15,12 @@ class HomeBody extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
               CustomAppBar(),
               FeaturedBooksListView(),
               Padding(
-                padding: EdgeInsets.all(8.0),
+                padding: EdgeInsets.symmetric(horizontal: 20,vertical: 15),
                 child: Text(
                   "Best Seller",
                   style: TextStyle(
@@ -31,11 +30,11 @@ class HomeBody extends StatelessWidget {
                   ),
                 ),
               ),
-              BestSellerListView(),
             ],
         ),
           ),
          const SliverFillRemaining(
+           fillOverscroll: true,
             child: BestSellerListView(),
           )
     ]),
