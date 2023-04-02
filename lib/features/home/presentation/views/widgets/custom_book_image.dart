@@ -3,8 +3,8 @@ import 'package:mvvm_app/core/constanse.dart';
 
 import '../../../../../core/utils/assets.dart';
 
-class CustomListViewItem extends StatelessWidget {
-  const CustomListViewItem({
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({
     Key? key,
   }) : super(key: key);
 

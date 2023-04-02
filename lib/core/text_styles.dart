@@ -1,25 +1,36 @@
 import 'package:flutter/material.dart';
 
-class TextStyles{
+class TextStyles {
 
-  Widget titleText({required text}){
-    return Text(text,
-      maxLines: 2,
-      overflow: TextOverflow.ellipsis,
-      style:const TextStyle(
-      fontSize: 21,
-      fontWeight: FontWeight.bold
-    ),);
-  }
-  Widget subText({required text,Color? subTitleColor}){
-    return Text(text,
+  Widget titleText({
+    required text,
+    double fontSize = 21,
+  }) {
+    return Text(
+      text,
       maxLines: 2,
       overflow: TextOverflow.ellipsis,
       style: TextStyle(
-      fontSize: 18,
-      color: subTitleColor,
-      fontWeight: FontWeight.normal
-    ),);
+        fontSize: fontSize,
+        fontWeight: FontWeight.bold,
+      ),
+    );
   }
 
+  Widget subText({
+    required text,
+    Color? subTitleColor,
+    double fontSize = 18,
+  }) {
+    return Text(
+      text,
+      maxLines: 2,
+      overflow: TextOverflow.ellipsis,
+      style: TextStyle(
+        fontSize: fontSize,
+        color: subTitleColor,
+        fontWeight: FontWeight.normal,
+      ),
+    );
+  }
 }
