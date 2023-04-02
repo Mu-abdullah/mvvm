@@ -21,6 +21,7 @@ class TextStyles {
     required text,
     Color? subTitleColor,
     double fontSize = 18,
+    FontWeight? fontWeight = FontWeight.normal
   }) {
     return Text(
       text,
@@ -29,7 +30,7 @@ class TextStyles {
       style: TextStyle(
         fontSize: fontSize,
         color: subTitleColor,
-        fontWeight: FontWeight.normal,
+        fontWeight: fontWeight,
       ),
     );
   }
