@@ -10,36 +10,39 @@ class BookDetailsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: EdgeInsets.symmetric(
-            horizontal: CustomSize().widthSize(context, .15),
-            vertical: CustomSize().heightSize(context, .02),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30),
+      child: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: CustomSize().widthSize(context, .15),
+              vertical: CustomSize().heightSize(context, .02),
+            ),
+            child: const CustomBookImage(),
           ),
-          child: const CustomBookImage(),
-        ),
-        TextStyles().titleText(
-          text: "Book Name",
-          fontSize: 36,
-        ),
-        const SizedBox(
-          height: 8,
-        ),
-        TextStyles().subText(
-          text: "Author Name",
-          fontSize: 21,
-          subTitleColor: Colors.grey,
-        ),
-        const SizedBox(
-          height: 18,
-        ),
-        const Rating(mainAxisAlignment: MainAxisAlignment.center),
-        const SizedBox(
-          height: 18,
-        ),
-        const ButtonAction(),
-      ],
+          TextStyles().titleText(
+            text: "Book Name",
+            fontSize: 36,
+          ),
+          const SizedBox(
+            height: 8,
+          ),
+          TextStyles().subText(
+            text: "Author Name",
+            fontSize: 21,
+            subTitleColor: Colors.grey,
+          ),
+          const SizedBox(
+            height: 18,
+          ),
+          const Rating(mainAxisAlignment: MainAxisAlignment.center),
+          const SizedBox(
+            height: 18,
+          ),
+          const ButtonAction(),
+        ],
+      ),
     );
   }
 }
