@@ -35,9 +35,9 @@ class BookDetailsBody extends StatelessWidget {
             subTitleColor: Colors.grey,
           ),
           const SizedBox(
-            height: 15,
+            height: 18,
           ),
-          const Rating(),
+          const Rating(mainAxisAlignment: MainAxisAlignment.center),
         ],
       ),
     );

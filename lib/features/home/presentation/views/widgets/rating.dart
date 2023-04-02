@@ -8,13 +8,13 @@ import '../../../../../core/utils/size.dart';
 class Rating extends StatelessWidget {
   const Rating({
     super.key,
+    this.mainAxisAlignment = MainAxisAlignment.start,
   });
-
+  final MainAxisAlignment mainAxisAlignment;
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: mainAxisAlignment,
       children: [
         const Icon(
           Iconsax.star1,
