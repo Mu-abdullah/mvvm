@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:mvvm_app/core/utils/app_routers.dart';
 import 'package:mvvm_app/core/utils/assets.dart';
-import 'package:mvvm_app/features/home/presentation/views/home.dart';
-import '../../../../../core/constanse.dart';
 import 'sliding_text.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -23,7 +23,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
     navigationDelayed();
   }
 
-   @override
+  @override
   void dispose() {
     super.dispose();
     animationController.dispose();
@@ -42,12 +42,13 @@ class _SplashViewBodyState extends State<SplashViewBody>
   }
 
   void navigationDelayed() {
-     Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 2), () {
       // Get.to(
       //   () => const HomeScreen(),
       //   transition: Transition.rightToLeft,
       //   duration: kTransactionDuration,
       // );
+      GoRouter.of(context).push(AppRouter.homeViewRoute);
     });
   }
 

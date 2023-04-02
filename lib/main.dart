@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:mvvm_app/core/utils/app_routers.dart';
 import 'core/constanse.dart';
 import 'features/home/presentation/views/home.dart';
 import 'features/splash_screen/presentation/views/splash_view.dart';
@@ -12,10 +14,11 @@ class MovieApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: kPrimaryColor),
-      home:const HomeScreen(),
+      routerConfig: AppRouter.router,
+      // home:const HomeScreen(),
     );
   }
 }
