@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import '../../../../../core/utils/assets.dart';
 
 class TextStyles {
-
   Widget titleText({
     required text,
     double fontSize = 21,
+    String? fontFamily = AssetDate.righteousFont,
   }) {
     return Text(
       text,
@@ -13,6 +14,7 @@ class TextStyles {
       style: TextStyle(
         fontSize: fontSize,
         fontWeight: FontWeight.bold,
+        fontFamily: fontFamily,
       ),
     );
   }
@@ -21,7 +23,8 @@ class TextStyles {
     required text,
     Color? subTitleColor,
     double fontSize = 18,
-    FontWeight? fontWeight = FontWeight.normal
+    FontWeight? fontWeight = FontWeight.normal,
+    String? fontFamily = AssetDate.righteousFont,
   }) {
     return Text(
       text,
@@ -31,6 +34,7 @@ class TextStyles {
         fontSize: fontSize,
         color: subTitleColor,
         fontWeight: fontWeight,
+        fontFamily: fontFamily,
       ),
     );
   }

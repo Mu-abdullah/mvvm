@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm_app/core/text_styles.dart';
 import 'package:mvvm_app/features/home/presentation/views/widgets/featured_list_view.dart';
 import 'best_seller_list_view_item.dart';
 import 'best_seller_listview.dart';
@@ -16,19 +17,12 @@ class HomeBody extends StatelessWidget {
           SliverToBoxAdapter(
             child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              CustomAppBar(),
-              FeaturedBooksListView(),
+            children:  [
+              const CustomAppBar(),
+              const  FeaturedBooksListView(),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20,vertical: 15),
-                child: Text(
-                  "Best Seller",
-                  style: TextStyle(
-                    fontSize: 21,
-                    fontWeight: FontWeight.normal,
-                    fontStyle: FontStyle.italic
-                  ),
-                ),
+                padding:const EdgeInsets.symmetric(horizontal: 20,vertical: 15),
+                child: TextStyles().titleText(text: "Best Seller",fontSize: 24),
               ),
             ],
         ),
