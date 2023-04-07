@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mvvm_app/core/text_styles.dart';
 import 'package:mvvm_app/features/home/presentation/views/widgets/featured_list_view.dart';
-import 'best_seller_list_view_item.dart';
 import 'best_seller_listview.dart';
 import 'custom_app_bar.dart';
 

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mvvm_app/core/constanse.dart';
-import 'package:mvvm_app/core/utils/size.dart';
 
 import '../../../../../core/utils/assets.dart';
 
