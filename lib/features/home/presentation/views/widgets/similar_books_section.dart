@@ -17,7 +17,9 @@ class SimilarBooksSection extends StatelessWidget {
             text: "You can also like",
             fontWeight: FontWeight.w500,
           ),
-          const SizedBox(height: 16,),
+          const SizedBox(
+            height: 16,
+          ),
           const SimilarBooksListView()
         ],
       ),

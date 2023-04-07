@@ -29,6 +29,7 @@ class SearchViewBody extends StatelessWidget {
     );
   }
 }
+
 class SearchResultListView extends StatelessWidget {
   const SearchResultListView({super.key});
 

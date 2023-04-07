@@ -6,4 +6,3 @@ const kWhiteColor = Color(0xffffffff);
 const kYellowColor = Color(0xfffcd207);
 
 const kTransactionDuration = Duration(milliseconds: 250);
-

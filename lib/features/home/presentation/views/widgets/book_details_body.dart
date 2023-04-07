@@ -13,17 +13,24 @@ class BookDetailsBody extends StatelessWidget {
         SliverFillRemaining(
           hasScrollBody: false,
           child: Column(
-            children:const [
+            children: const [
               CustomBookDetailsAppBar(),
               BookDetailsSection(),
-              Expanded(child: SizedBox(height: 50,),),
+              Expanded(
+                child: SizedBox(
+                  height: 50,
+                ),
+              ),
               SimilarBooksSection(),
-              Expanded(child: SizedBox(height: 16,),),
+              Expanded(
+                child: SizedBox(
+                  height: 16,
+                ),
+              ),
             ],
           ),
         )
       ],
-
     );
   }
 }

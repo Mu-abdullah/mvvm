@@ -6,10 +6,10 @@ import '../../features/search/presentation/views/search_view.dart';
 import '../../features/splash_screen/presentation/views/splash_view.dart';
 
 abstract class AppRouter {
-    static const splashViewRoute = '/';
-    static const homeViewRoute = '/homeView';
-    static const bookDetailsViewRoute = '/bookDetailsView';
-    static const searchViewRoute = '/searchView';
+  static const splashViewRoute = '/';
+  static const homeViewRoute = '/homeView';
+  static const bookDetailsViewRoute = '/bookDetailsView';
+  static const searchViewRoute = '/searchView';
 
   static final router = GoRouter(
     routes: [
