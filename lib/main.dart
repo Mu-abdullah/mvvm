@@ -1,8 +1,11 @@
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:mvvm_app/core/utils/app_routers.dart';
+import 'core/bloc_observer.dart';
 import 'core/constanse.dart';
 
 void main() {
+  Bloc.observer = MyBlocObserver();
   runApp(const MovieApp());
 }
 
