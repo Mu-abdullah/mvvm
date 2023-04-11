@@ -21,7 +21,8 @@ class ServerFailure extends Failure {
         return ServerFailure('Receive timeout with ApiServer');
 
       case DioErrorType.badCertificate:
-
+        return ServerFailure('Bad Certificate with ApiServer');
+        
       case DioErrorType.badResponse:
         return ServerFailure.fromResponse(
             dioError.response!.statusCode, dioError.response!.data);
@@ -37,7 +38,7 @@ class ServerFailure extends Failure {
           return ServerFailure('No Internet Connection');
         }
         return ServerFailure('Unexpected Error, Please try again!');
-        
+
       default:
         return ServerFailure('Opps There was an Error, Please try again');
     }
