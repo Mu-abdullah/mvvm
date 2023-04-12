@@ -6,13 +6,6 @@ import 'package:mvvm_app/features/home/data/repo/home_repo_impl.dart';
 final getIt = GetIt.instance;
 
 void setupServiceLocator() {
-  getIt.registerSingleton<ApiService>(
-    ApiService(
-      Dio(),
-    ),
-  );
-
-  getIt.registerSingleton<HomeRepoImp>(
-    HomeRepoImp(getIt.get<ApiService>()),
-  );
+  getIt.registerSingleton<ApiService>(ApiService(Dio()));
+  getIt.registerSingleton<HomeRepoImp>(HomeRepoImp(getIt.get<ApiService>()));
 }
